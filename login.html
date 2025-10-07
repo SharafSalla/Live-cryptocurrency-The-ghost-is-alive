@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - SH-Ghost-Crypto-Analysis</title>
+    <meta name="description" content="سجل دخولك إلى SH-Ghost-Crypto-Analysis للوصول إلى ميزات إضافية وحفظ توصياتك المفضلة">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                <li><a href="support.html">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary active">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>🔐 تسجيل الدخول</h1>
+                    <p>مرحباً بعودتك! سجل دخولك للوصول إلى حسابك</p>
+                </div>
+
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                        <div class="input-icon">📧</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                        <div class="input-icon">🔒</div>
+                        <button type="button" class="password-toggle" onclick="togglePassword('password')">👁️</button>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember-me">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="forgot-password.html" class="forgot-link">نسيت كلمة المرور؟</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        <span class="btn-text">تسجيل الدخول</span>
+                        <span class="btn-loading" style="display: none;">جاري التحقق...</span>
+                    </button>
+
+                    <div class="auth-divider">
+                        <span>أو</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="btn btn-secondary social-btn" onclick="loginWithGoogle()">
+                            <span class="social-icon">🔍</span>
+                            تسجيل الدخول بـ Google
+                        </button>
+                        <button type="button" class="btn btn-secondary social-btn" onclick="loginWithTwitter()">
+                            <span class="social-icon">🐦</span>
+                            تسجيل الدخول بـ Twitter
+                        </button>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- معلومات إضافية -->
+            <div class="auth-info">
+                <h3>🎯 مميزات الحساب المسجل</h3>
+                <ul class="features-list">
+                    <li>
+                        <span class="feature-icon">⭐</span>
+                        <div class="feature-content">
+                            <h4>حفظ التوصيات المفضلة</h4>
+                            <p>احفظ التوصيات المهمة لمراجعتها لاحقاً</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">📊</span>
+                        <div class="feature-content">
+                            <h4>تتبع الأداء الشخصي</h4>
+                            <p>راقب أداءك وأرباحك من التوصيات</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">🔔</span>
+                        <div class="feature-content">
+                            <h4>تنبيهات مخصصة</h4>
+                            <p>احصل على تنبيهات للعملات التي تهتم بها</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">💬</span>
+                        <div class="feature-content">
+                            <h4>مشاركة في المجتمع</h4>
+                            <p>شارك تجاربك وتفاعل مع المتداولين الآخرين</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">📈</span>
+                        <div class="feature-content">
+                            <h4>تحليلات متقدمة</h4>
+                            <p>احصل على تحليلات إضافية وتوصيات مخصصة</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

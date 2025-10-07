@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعم والتفاعل - SH-Ghost-Crypto-Analysis</title>
+    <meta name="description" content="ادعم مشروع SH-Ghost-Crypto-Analysis واساهم في استمرار تقديم الخدمات المجانية للمجتمع">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                <li><a href="support.html" class="active">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم العنوان الرئيسي -->
+        <section class="hero">
+            <h1>🤝 الدعم والتفاعل</h1>
+            <p>مشروع SH-Ghost-Crypto-Analysis مجاني بالكامل لخدمة المجتمع. دعمكم يساعدنا على الاستمرار في التطوير وتقديم أفضل الخدمات.</p>
+        </section>
+
+        <!-- قسم الدعم المالي -->
+        <section class="section">
+            <h2>💰 دعم المشروع مالياً</h2>
+            <div class="support-intro">
+                <p>نحن نؤمن بأن المعرفة والتحليلات الدقيقة يجب أن تكون متاحة للجميع مجاناً. لذلك، نقدم جميع خدماتنا دون أي رسوم. دعمكم المالي يساعدنا على:</p>
+                <ul class="support-benefits">
+                    <li>🔧 تطوير وتحسين خوارزميات التحليل</li>
+                    <li>📊 توسيع قاعدة البيانات لتشمل المزيد من العملات</li>
+                    <li>⚡ تحسين سرعة وأداء المنصة</li>
+                    <li>🛡️ تعزيز الأمان وحماية البيانات</li>
+                    <li>📱 تطوير تطبيق الهاتف المحمول</li>
+                    <li>🎓 إنشاء محتوى تعليمي متقدم</li>
+                </ul>
+            </div>
+
+            <div class="support-methods">
+                <h3>طرق الدعم المتاحة</h3>
+                
+                <!-- دعم عبر Binance Pay -->
+                <div class="support-method">
+                    <div class="method-header">
+                        <h4>🟡 Binance Pay</h4>
+                        <span class="method-badge recommended">الأسرع</span>
+                    </div>
+                    <div class="method-content">
+                        <p>الطريقة الأسرع والأسهل للدعم عبر تطبيق Binance</p>
+                        <div class="support-info">
+                            <div class="info-item">
+                                <span class="label">معرّف Binance Pay:</span>
+                                <div class="copy-container">
+                                    <span class="value" id="binance-id">520880874</span>
+                                    <button class="btn btn-secondary copy-btn" onclick="copyToClipboard('binance-id')">📋 نسخ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="method-steps">
+                            <h5>خطوات الدعم:</h5>
+                            <ol>
+                                <li>افتح تطبيق Binance</li>
+                                <li>اذهب إلى Binance Pay</li>
+                                <li>اختر "إرسال"</li>
+                                <li>أدخل المعرّف: 520880874</li>
+                                <li>أدخل المبلغ المرغوب</li>
+                                <li>أكمل العملية</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دعم عبر USDT (Binance) -->
+                <div class="support-method">
+                    <div class="method-header">
+                        <h4>💎 USDT - محفظة Binance</h4>
+                        <span class="method-badge">BEP20</span>
+                    </div>
+                    <div class="method-content">
+                        <p>إرسال USDT مباشرة إلى محفظة Binance عبر شبكة BEP20</p>
+                        <div class="support-info">
+                            <div class="info-item">
+                                <span class="label">عنوان المحفظة:</span>
+                                <div class="copy-container">
+                                    <span class="value wallet-address" id="binance-wallet">0xe3c86decdabe70fd546113e446d9cbcff5b4f096</span>
+                                    <button class="btn btn-secondary copy-btn" onclick="copyToClipboard('binance-wallet')">📋 نسخ</button>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">الشبكة:</span>
+                                <span class="value network">BNB Smart Chain (BEP20)</span>
+                            </div>
+                        </div>
+                        <div class="method-warning">
+                            <p><strong>⚠️ تنبيه مهم:</strong> تأكد من استخدام شبكة BEP20 فقط. أي إرسال عبر شبكة أخرى سيؤدي لفقدان الأموال.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دعم عبر USDT (MEXC) -->
+                <div class="support-method">
+                    <div class="method-header">
+                        <h4>💎 USDT - محفظة MEXC</h4>
+                        <span class="method-badge">BEP20</span>
+                    </div>
+                    <div class="method-content">
+                        <p>إرسال USDT إلى محفظة MEXC عبر شبكة BEP20</p>
+                        <div class="support-info">
+                            <div class="info-item">
+                                <span class="label">عنوان المحفظة:</span>
+                                <div class="copy-container">
+                                    <span class="value wallet-address" id="mexc-wallet">0xf86705126a09a6be3f999cf60a9093176a6d94a5</span>
+                                    <button class="btn btn-secondary copy-btn" onclick="copyToClipboard('mexc-wallet')">📋 نسخ</button>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">الشبكة:</span>
+                                <span class="value network">BNB Smart Chain (BEP20)</span>
+                            </div>
+                        </div>
+                        <div class="method-warning">
+                            <p><strong>⚠️ تنبيه مهم:</strong> تأكد من استخدام شبكة BEP20 فقط. أي إرسال عبر شبكة أخرى سيؤدي لفقدان الأموال.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- شهادات التقدير -->
+            <div class="appreciation-section">
+                <h3>🏆 شهادات التقدير من الداعمين</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"مشروع رائع يستحق الدعم. التوصيات دقيقة والخدمة مجانية. شكراً لكم على خدمة المجتمع."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="name">خالد أ.</span>
+                            <span class="support">دعم بـ 50 USDT</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"بفضل توصياتكم حققت أرباحاً ممتازة. أقل ما يمكنني فعله هو دعم هذا المشروع المميز."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="name">سارة م.</span>
+                            <span class="support">دعم بـ 100 USDT</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"منصة احترافية ومجانية. نادراً ما نجد مثل هذه الخدمات بهذا المستوى من الجودة."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="name">أحمد ع.</span>
+                            <span class="support">دعم بـ 25 USDT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم إرسال رسائل الدعم -->
+        <section class="section">
+            <h2>📧 إرسال رسالة دعم أو اقتراح</h2>
+            <div class="contact-form-container">
+                <p>لديك اقتراح لتحسين المنصة؟ تواجه مشكلة تقنية؟ أو تريد مشاركة رأيك؟ نحن نستمع إليك!</p>
+                
+                <form id="support-form" class="support-form">
+                    <div class="form-group">
+                        <label for="message-type">نوع الرسالة</label>
+                        <select id="message-type" required>
+                            <option value="">اختر نوع الرسالة</option>
+                            <option value="suggestion">اقتراح تحسين</option>
+                            <option value="bug">بلاغ عن مشكلة تقنية</option>
+                            <option value="feedback">رأي أو ملاحظة</option>
+                            <option value="feature">طلب ميزة جديدة</option>
+                            <option value="appreciation">رسالة شكر وتقدير</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sender-name">الاسم (اختياري)</label>
+                        <input type="text" id="sender-name" placeholder="يمكنك ترك هذا الحقل فارغاً للبقاء مجهولاً">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sender-email">البريد الإلكتروني (اختياري)</label>
+                        <input type="email" id="sender-email" placeholder="للرد عليك في حالة الحاجة">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-subject">موضوع الرسالة</label>
+                        <input type="text" id="message-subject" placeholder="موضوع مختصر للرسالة" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-content">محتوى الرسالة</label>
+                        <textarea id="message-content" rows="6" placeholder="اكتب رسالتك هنا بالتفصيل..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-attachment">إرفاق صورة (اختياري)</label>
+                        <input type="file" id="message-attachment" accept="image/*">
+                        <small>يمكنك إرفاق صورة توضيحية إذا كانت الرسالة تتعلق بمشكلة تقنية</small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">📤 إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- قسم الاقتراحات -->
+        <section class="section">
+            <h2>💡 اقتراحات المجتمع</h2>
+            <div class="suggestions-container">
+                <p>شارك في تطوير المنصة من خلال التصويت على الاقتراحات أو إضافة اقتراحات جديدة</p>
+                
+                <div class="suggestions-list">
+                    <div class="suggestion-item">
+                        <div class="suggestion-content">
+                            <h4>إضافة تنبيهات عبر التليجرام</h4>
+                            <p>إرسال التوصيات الجديدة مباشرة عبر بوت التليجرام</p>
+                            <div class="suggestion-meta">
+                                <span class="author">اقترحه: محمد أ.</span>
+                                <span class="date">منذ 3 أيام</span>
+                            </div>
+                        </div>
+                        <div class="suggestion-votes">
+                            <button class="vote-btn upvote" onclick="voteSuggestion(1, 'up')">
+                                👍 <span>47</span>
+                            </button>
+                            <button class="vote-btn downvote" onclick="voteSuggestion(1, 'down')">
+                                👎 <span>3</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="suggestion-item">
+                        <div class="suggestion-content">
+                            <h4>تطبيق الهاتف المحمول</h4>
+                            <p>تطوير تطبيق للأندرويد والآيفون لسهولة الوصول للتوصيات</p>
+                            <div class="suggestion-meta">
+                                <span class="author">اقترحته: فاطمة س.</span>
+                                <span class="date">منذ أسبوع</span>
+                            </div>
+                        </div>
+                        <div class="suggestion-votes">
+                            <button class="vote-btn upvote" onclick="voteSuggestion(2, 'up')">
+                                👍 <span>89</span>
+                            </button>
+                            <button class="vote-btn downvote" onclick="voteSuggestion(2, 'down')">
+                                👎 <span>5</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="suggestion-item">
+                        <div class="suggestion-content">
+                            <h4>قسم تعليمي للمبتدئين</h4>
+                            <p>إضافة دروس تعليمية عن أساسيات التحليل الفني والتداول</p>
+                            <div class="suggestion-meta">
+                                <span class="author">اقترحه: علي ح.</span>
+                                <span class="date">منذ أسبوعين</span>
+                            </div>
+                        </div>
+                        <div class="suggestion-votes">
+                            <button class="vote-btn upvote" onclick="voteSuggestion(3, 'up')">
+                                👍 <span>156</span>
+                            </button>
+                            <button class="vote-btn downvote" onclick="voteSuggestion(3, 'down')">
+                                👎 <span>8</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="add-suggestion">
+                    <h4>أضف اقتراحك الجديد</h4>
+                    <form id="suggestion-form">
+                        <div class="form-group">
+                            <input type="text" id="suggestion-title" placeholder="عنوان الاقتراح" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="suggestion-description" rows="3" placeholder="وصف مفصل للاقتراح" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">💡 إضافة الاقتراح</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأسئلة الشائعة -->
+        <section class="section">
+            <h2>❓ الأسئلة الشائعة</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(1)">
+                        <h4>هل الخدمة مجانية حقاً؟</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-1">
+                        <p>نعم، جميع خدماتنا مجانية بالكامل. نحن نؤمن بأن المعرفة والتحليلات الدقيقة يجب أن تكون متاحة للجميع. الدعم المالي اختياري ويساعدنا على الاستمرار في التطوير.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(2)">
+                        <h4>كيف يتم حساب نسبة الثقة في التوصيات؟</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-2">
+                        <p>نسبة الثقة تُحسب بناءً على عدة عوامل تقنية مثل قوة الإشارات الفنية، حجم التداول، التقلبات، والاتجاه العام للسوق. كلما زادت العوامل الإيجابية، زادت نسبة الثقة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(3)">
+                        <h4>هل يمكنني الاعتماد على التوصيات بنسبة 100%؟</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-3">
+                        <p>لا، التداول ينطوي دائماً على مخاطر. توصياتنا مبنية على التحليل الفني ولكن السوق قد يتحرك بشكل غير متوقع. استخدم دائماً وقف الخسارة ولا تستثمر أكثر مما يمكنك تحمل خسارته.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(4)">
+                        <h4>كم مرة يتم تحديث التوصيات؟</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-4">
+                        <p>نقوم بتحليل السوق وتحديث التوصيات كل 4 ساعات. في حالات التقلبات الشديدة، قد نقوم بتحديثات أكثر تكراراً لضمان دقة المعلومات.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+    <script src="support.js"></script>
+</body>
+</html>

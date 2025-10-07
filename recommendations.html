@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التوصيات اليومية - SH-Ghost-Crypto-Analysis</title>
+    <meta name="description" content="توصيات تداول يومية دقيقة للعملات الرقمية مع تحليل فني معمق وسيناريوهات الارتفاع والانخفاض">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recommendations.html" class="active">التوصيات اليومية</a></li>
+                <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                <li><a href="support.html">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم العنوان الرئيسي -->
+        <section class="hero">
+            <h1>📊 التوصيات اليومية</h1>
+            <p>سيناريوهات تداول دقيقة مبنية على التحليل الفني المعمق لفريم اليوم الواحد. جميع التوصيات محدثة لحظياً ومدعومة بمستويات دقيقة.</p>
+            <div class="recommendation-filters">
+                <button class="btn btn-primary active" onclick="filterRecommendations('all')">جميع التوصيات</button>
+                <button class="btn btn-success" onclick="filterRecommendations('bullish')">🟢 سيناريوهات الارتفاع</button>
+                <button class="btn btn-danger" onclick="filterRecommendations('bearish')">🔴 سيناريوهات الانخفاض</button>
+                <button class="btn btn-secondary" onclick="filterRecommendations('high-confidence')">⭐ عالية الثقة</button>
+            </div>
+        </section>
+
+        <!-- إحصائيات التوصيات -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" id="total-today-recommendations">12</div>
+                <div class="stat-label">توصيات اليوم</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="bullish-count">7</div>
+                <div class="stat-label">سيناريوهات ارتفاع</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="bearish-count">5</div>
+                <div class="stat-label">سيناريوهات انخفاض</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="avg-confidence">89.2%</div>
+                <div class="stat-label">متوسط الثقة</div>
+            </div>
+        </div>
+
+        <!-- قسم التوصيات -->
+        <section class="section">
+            <h2>🎯 التوصيات النشطة</h2>
+            <div id="recommendations-container">
+                <!-- سيتم ملء التوصيات هنا عبر JavaScript -->
+                <div class="loading">جاري تحميل التوصيات...</div>
+            </div>
+        </section>
+
+        <!-- قسم التحليل الفني -->
+        <section class="section">
+            <h2>📈 منهجية التحليل الفني</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🔍 شروط الارتفاع</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✅ كسر مستوى المقاومة الرئيسي</li>
+                        <li>✅ حجم تداول أعلى من المتوسط</li>
+                        <li>✅ مؤشر RSI أقل من 70</li>
+                        <li>✅ اتجاه صاعد في MACD</li>
+                        <li>✅ دعم من المتوسطات المتحركة</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">📉 شروط الانخفاض</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>❌ كسر مستوى الدعم الرئيسي</li>
+                        <li>❌ حجم تداول أعلى من المتوسط</li>
+                        <li>❌ مؤشر RSI أعلى من 30</li>
+                        <li>❌ اتجاه هابط في MACD</li>
+                        <li>❌ مقاومة من المتوسطات المتحركة</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">⚖️ إدارة المخاطر</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>🛡️ وقف الخسارة الذكي</li>
+                        <li>🎯 ثلاثة أهداف متدرجة</li>
+                        <li>📊 رافعة مالية ديناميكية</li>
+                        <li>⚡ نسبة ثقة ذكية</li>
+                        <li>📈 تحديث مستمر للمستويات</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأداء التاريخي -->
+        <section class="section">
+            <h2>📊 الأداء التاريخي للتوصيات</h2>
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <h3>آخر 7 أيام</h3>
+                    <div class="performance-stats">
+                        <div class="stat">
+                            <span class="label">إجمالي التوصيات:</span>
+                            <span class="value">84</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">التوصيات الناجحة:</span>
+                            <span class="value success">73</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">نسبة النجاح:</span>
+                            <span class="value success">86.9%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">متوسط الربح:</span>
+                            <span class="value success">+12.4%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <h3>آخر 30 يوم</h3>
+                    <div class="performance-stats">
+                        <div class="stat">
+                            <span class="label">إجمالي التوصيات:</span>
+                            <span class="value">347</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">التوصيات الناجحة:</span>
+                            <span class="value success">301</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">نسبة النجاح:</span>
+                            <span class="value success">86.7%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">متوسط الربح:</span>
+                            <span class="value success">+15.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التنبيهات -->
+        <section class="section">
+            <h2>🔔 تنبيهات مهمة</h2>
+            <div class="alerts-container">
+                <div class="alert alert-warning">
+                    <strong>⚠️ تنبيه:</strong> يرجى دائماً استخدام وقف الخسارة المحدد في كل توصية لحماية رأس المال.
+                </div>
+                <div class="alert alert-info">
+                    <strong>ℹ️ معلومة:</strong> جميع التوصيات مبنية على التحليل الفني لفريم اليوم الواحد وقد تتغير مع تغير ظروف السوق.
+                </div>
+                <div class="alert alert-success">
+                    <strong>✅ نصيحة:</strong> للحصول على أفضل النتائج، يُنصح بتوزيع المخاطر على عدة توصيات وعدم الاستثمار بكامل رأس المال في توصية واحدة.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+    <script src="recommendations.js"></script>
+</body>
+</html>

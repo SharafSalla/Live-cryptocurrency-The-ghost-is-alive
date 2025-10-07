@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH-Ghost-Crypto-Analysis - تحليلات دقيقة للعملات الرقمية</title>
+    <meta name="description" content="منصة تحليل العملات الرقمية الأكثر دقة - توصيات يومية، تحليل فني معمق، وبيانات حية لجميع العملات">
+    <meta name="keywords" content="عملات رقمية, تحليل فني, توصيات تداول, بيتكوين, إيثريوم">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                <li><a href="support.html">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم البطل الرئيسي -->
+        <section class="hero">
+            <h1>🚀 تحليلات دقيقة لعالم العملات الرقمية</h1>
+            <p>احصل على تحليل فني فوري وسيناريوهات تداول يومية دقيقة لجميع العملات الرقمية. منصة مجانية بالكامل لخدمة المجتمع.</p>
+            <div class="search-container">
+                <input type="text" id="main-search" placeholder="ابحث عن عملة (مثال: Bitcoin, BTC)..." autocomplete="off">
+                <button class="btn btn-primary" onclick="searchCoin()">🔍 بحث</button>
+            </div>
+            <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
+        </section>
+
+        <!-- إحصائيات الموقع -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" id="total-recommendations">1,247</div>
+                <div class="stat-label">إجمالي التوصيات</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="success-rate">87.3%</div>
+                <div class="stat-label">نسبة الدقة</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="active-users">15,892</div>
+                <div class="stat-label">المستخدمون النشطون</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-profit">+2,847%</div>
+                <div class="stat-label">إجمالي الأرباح</div>
+            </div>
+        </div>
+
+        <!-- نظرة عامة على السوق -->
+        <section class="section">
+            <h2>📊 نظرة عامة على السوق (بيانات حية)</h2>
+            <div class="market-summary" id="market-summary">
+                <div class="loading">جاري تحميل بيانات السوق...</div>
+            </div>
+            <div id="crypto-table-container">
+                <div class="loading">جاري تحميل بيانات العملات...</div>
+            </div>
+        </section>
+
+        <!-- الشبكة الرئيسية للمحتوى -->
+        <div class="grid-container">
+            <!-- أهم 10 عملات رائجة -->
+            <div class="grid-item">
+                <h3>🔥 أهم 10 عملات رائجة</h3>
+                <ul id="trending-coins">
+                    <li class="loading">جاري التحميل...</li>
+                </ul>
+            </div>
+
+            <!-- آخر 5 توصيات مميزة -->
+            <div class="grid-item">
+                <h3>⭐ آخر التوصيات المميزة</h3>
+                <ul id="latest-recommendations">
+                    <li><a href="recommendations.html#btc">🟢 BTC/USDT - سيناريو ارتفاع (ثقة: 92%)</a></li>
+                    <li><a href="recommendations.html#eth">🔴 ETH/USDT - سيناريو انخفاض (ثقة: 88%)</a></li>
+                    <li><a href="recommendations.html#sol">🟢 SOL/USDT - سيناريو ارتفاع (ثقة: 85%)</a></li>
+                    <li><a href="recommendations.html#ada">🟢 ADA/USDT - سيناريو ارتفاع (ثقة: 79%)</a></li>
+                    <li><a href="recommendations.html#matic">🔴 MATIC/USDT - سيناريو انخفاض (ثقة: 83%)</a></li>
+                </ul>
+            </div>
+
+            <!-- آخر 3 نجاحات من المجتمع -->
+            <div class="grid-item">
+                <h3>🏆 آخر نجاحات المجتمع</h3>
+                <ul id="community-success">
+                    <li><a href="community-success.html">أحمد م. - ربح 340% من BTC</a></li>
+                    <li><a href="community-success.html">فاطمة س. - ربح 180% من ETH</a></li>
+                    <li><a href="community-success.html">محمد ع. - ربح 250% من SOL</a></li>
+                </ul>
+            </div>
+
+            <!-- رسائل الدعم السريعة -->
+            <div class="grid-item">
+                <h3>💬 رسائل الدعم السريعة</h3>
+                <div class="quick-support">
+                    <textarea id="quick-message" placeholder="اكتب رسالة دعم أو اقتراح سريع..." rows="3"></textarea>
+                    <button class="btn btn-primary" onclick="sendQuickMessage()" style="margin-top: 1rem; width: 100%;">إرسال الرسالة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الميزات الرئيسية -->
+        <section class="section">
+            <h2>✨ لماذا SH-Ghost-Crypto-Analysis؟</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">📈 تحليل فني دقيق</h3>
+                    </div>
+                    <p>تحليل معمق يشمل مستويات الدعم والمقاومة، نقاط الارتكاز، والمؤشرات الفنية المتقدمة لكل عملة.</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">⚡ بيانات حية فورية</h3>
+                    </div>
+                    <p>أسعار محدثة لحظياً من أفضل المصادر العالمية مع تحديث مستمر للتحليلات والتوصيات.</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🎯 توصيات ذكية</h3>
+                    </div>
+                    <p>سيناريوهات تداول يومية مع تحديد دقيق لنقاط الدخول والأهداف ووقف الخسارة.</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🆓 مجاني بالكامل</h3>
+                    </div>
+                    <p>جميع الخدمات مجانية تماماً لخدمة المجتمع، مع إمكانية الدعم الاختياري لاستمرار التطوير.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التواصل الاجتماعي -->
+        <section class="section">
+            <h2>🌐 تابعنا وشارك النجاح</h2>
+            <div class="social-links" style="text-align: center;">
+                <p style="margin-bottom: 1.5rem; color: var(--gray-600);">انضم إلى مجتمعنا المتنامي من المتداولين الناجحين</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-primary">📱 تليجرام</a>
+                    <a href="#" class="btn btn-secondary">🐦 تويتر</a>
+                    <a href="#" class="btn btn-success">📺 يوتيوب</a>
+                    <a href="support.html" class="btn btn-warning">💰 دعم المشروع</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

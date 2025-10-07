@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجاحات المجتمع - SH-Ghost-Crypto-Analysis</title>
+    <meta name="description" content="قصص نجاح حقيقية من مجتمع المتداولين - أرباح موثقة وتجارب ملهمة في تداول العملات الرقمية">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                <li><a href="community-success.html" class="active">نجاحات المجتمع</a></li>
+                <li><a href="support.html">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- قسم العنوان الرئيسي -->
+        <section class="hero">
+            <h1>🏆 نجاحات المجتمع</h1>
+            <p>قصص نجاح حقيقية من أعضاء مجتمعنا المتنامي. أرباح موثقة، تجارب ملهمة، ونصائح قيمة من المتداولين الناجحين.</p>
+            <div class="success-filters">
+                <button class="btn btn-primary active" onclick="filterSuccess('all')">جميع النجاحات</button>
+                <button class="btn btn-success" onclick="filterSuccess('high-profit')">أرباح عالية (+100%)</button>
+                <button class="btn btn-warning" onclick="filterSuccess('recent')">الأحدث</button>
+                <button class="btn btn-secondary" onclick="filterSuccess('stories')">قصص ملهمة</button>
+            </div>
+        </section>
+
+        <!-- إحصائيات النجاح -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">2,847</div>
+                <div class="stat-label">قصة نجاح</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$12.4M</div>
+                <div class="stat-label">إجمالي الأرباح</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">89.3%</div>
+                <div class="stat-label">معدل النجاح</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">156%</div>
+                <div class="stat-label">متوسط الربح</div>
+            </div>
+        </div>
+
+        <!-- معرض صور الأرباح -->
+        <section class="section">
+            <h2>💰 معرض الأرباح الموثقة</h2>
+            <div id="profit-gallery" class="profit-gallery">
+                <!-- سيتم ملء المعرض عبر JavaScript -->
+                <div class="loading">جاري تحميل معرض الأرباح...</div>
+            </div>
+        </section>
+
+        <!-- قصص النجاح المفصلة -->
+        <section class="section">
+            <h2>📖 قصص النجاح الملهمة</h2>
+            <div id="success-stories" class="success-stories">
+                <!-- قصة نجاح 1 -->
+                <div class="success-story">
+                    <div class="story-header">
+                        <div class="user-info">
+                            <div class="avatar">أ.م</div>
+                            <div class="user-details">
+                                <h3>أحمد محمد</h3>
+                                <p>متداول منذ 6 أشهر</p>
+                            </div>
+                        </div>
+                        <div class="profit-badge">+340%</div>
+                    </div>
+                    <div class="story-content">
+                        <h4>من الصفر إلى 340% ربح مع BTC</h4>
+                        <p>بدأت رحلتي في التداول بمبلغ صغير قدره 500 دولار. كنت مبتدئاً تماماً ولا أعرف شيئاً عن التحليل الفني. بعد اكتشاف SH-Ghost-Crypto-Analysis، بدأت بتطبيق التوصيات بحذر.</p>
+                        <p>أول توصية طبقتها كانت لعملة البيتكوين عند مستوى 28,500 دولار. التوصية كانت دقيقة جداً وحققت الهدف الأول خلال يومين. هذا شجعني على الاستمرار والتعلم أكثر.</p>
+                        <div class="story-stats">
+                            <div class="stat">
+                                <span class="label">رأس المال الأولي:</span>
+                                <span class="value">$500</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">الربح الحالي:</span>
+                                <span class="value success">$1,700</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">العملة الرئيسية:</span>
+                                <span class="value">BTC</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">مدة التداول:</span>
+                                <span class="value">6 أشهر</span>
+                            </div>
+                        </div>
+                        <div class="story-tips">
+                            <h5>نصائحي للمبتدئين:</h5>
+                            <ul>
+                                <li>ابدأ بمبلغ صغير يمكنك تحمل خسارته</li>
+                                <li>اتبع التوصيات بدقة ولا تغير في المستويات</li>
+                                <li>استخدم وقف الخسارة دائماً</li>
+                                <li>لا تستثمر كل رأس المال في صفقة واحدة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قصة نجاح 2 -->
+                <div class="success-story">
+                    <div class="story-header">
+                        <div class="user-info">
+                            <div class="avatar">ف.س</div>
+                            <div class="user-details">
+                                <h3>فاطمة سالم</h3>
+                                <p>متداولة منذ سنة</p>
+                            </div>
+                        </div>
+                        <div class="profit-badge">+180%</div>
+                    </div>
+                    <div class="story-content">
+                        <h4>تحويل 1000 دولار إلى 2800 دولار مع ETH</h4>
+                        <p>كنت أعمل في مجال التسويق وأردت مصدر دخل إضافي. سمعت عن العملات الرقمية لكن كنت خائفة من المخاطر. عندما وجدت هذه المنصة، أعجبتني دقة التحليلات والشفافية في النتائج.</p>
+                        <p>ركزت على عملة الإيثريوم وطبقت استراتيجية التداول المتدرج. بدلاً من الدخول بكامل المبلغ، كنت أقسم رأس المال على عدة صفقات. هذا قلل المخاطر وزاد الأرباح.</p>
+                        <div class="story-stats">
+                            <div class="stat">
+                                <span class="label">رأس المال الأولي:</span>
+                                <span class="value">$1,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">الربح الحالي:</span>
+                                <span class="value success">$1,800</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">العملة الرئيسية:</span>
+                                <span class="value">ETH</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">مدة التداول:</span>
+                                <span class="value">12 شهر</span>
+                            </div>
+                        </div>
+                        <div class="story-tips">
+                            <h5>نصائحي للمتداولات:</h5>
+                            <ul>
+                                <li>لا تدعي العواطف تتحكم في قراراتك</li>
+                                <li>ادرسي السوق جيداً قبل الدخول</li>
+                                <li>استخدمي استراتيجية التداول المتدرج</li>
+                                <li>احتفظي بسجل لجميع صفقاتك</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قصة نجاح 3 -->
+                <div class="success-story">
+                    <div class="story-header">
+                        <div class="user-info">
+                            <div class="avatar">م.ع</div>
+                            <div class="user-details">
+                                <h3>محمد علي</h3>
+                                <p>متداول منذ 3 أشهر</p>
+                            </div>
+                        </div>
+                        <div class="profit-badge">+250%</div>
+                    </div>
+                    <div class="story-content">
+                        <h4>من طالب جامعي إلى متداول ناجح مع SOL</h4>
+                        <p>كطالب جامعي، كان لدي وقت فراغ كثير ومبلغ صغير من المصروف الشهري. قررت استثمار 200 دولار في العملات الرقمية. اخترت عملة سولانا بناءً على توصيات المنصة.</p>
+                        <p>ما أعجبني هو وضوح التوصيات وسهولة فهمها. كل توصية تأتي مع شرح مفصل للأسباب، مما ساعدني على التعلم بسرعة. الآن أحقق أرباحاً تغطي مصاريف الجامعة.</p>
+                        <div class="story-stats">
+                            <div class="stat">
+                                <span class="label">رأس المال الأولي:</span>
+                                <span class="value">$200</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">الربح الحالي:</span>
+                                <span class="value success">$500</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">العملة الرئيسية:</span>
+                                <span class="value">SOL</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">مدة التداول:</span>
+                                <span class="value">3 أشهر</span>
+                            </div>
+                        </div>
+                        <div class="story-tips">
+                            <h5>نصائحي للطلاب:</h5>
+                            <ul>
+                                <li>ابدأ بمبلغ صغير من مصروفك الشهري</li>
+                                <li>استغل وقت الفراغ في التعلم</li>
+                                <li>لا تتداول أثناء فترات الامتحانات</li>
+                                <li>اجعل التداول مصدر دخل إضافي وليس أساسي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم مشاركة النجاح -->
+        <section class="section">
+            <h2>📤 شارك قصة نجاحك</h2>
+            <div class="share-success-form">
+                <p>هل حققت أرباحاً باستخدام توصياتنا؟ شارك قصتك لتلهم الآخرين!</p>
+                <form id="success-form">
+                    <div class="form-group">
+                        <label for="user-name">الاسم (اختياري)</label>
+                        <input type="text" id="user-name" placeholder="يمكنك استخدام اسم مستعار">
+                    </div>
+                    <div class="form-group">
+                        <label for="profit-amount">نسبة الربح المحققة</label>
+                        <input type="text" id="profit-amount" placeholder="مثال: +150%" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coin-used">العملة المستخدمة</label>
+                        <input type="text" id="coin-used" placeholder="مثال: BTC, ETH, SOL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="success-story">قصة النجاح</label>
+                        <textarea id="success-story" rows="5" placeholder="اكتب قصتك وتجربتك مع التداول..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="success-tips">نصائح للمبتدئين</label>
+                        <textarea id="success-tips" rows="3" placeholder="ما هي نصائحك للمتداولين الجدد؟"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="profit-screenshot">صورة الربح (اختياري)</label>
+                        <input type="file" id="profit-screenshot" accept="image/*">
+                        <small>يرجى حجب المعلومات الشخصية في الصورة</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">📤 مشاركة القصة</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- إحصائيات تفصيلية -->
+        <section class="section">
+            <h2>📊 إحصائيات النجاح التفصيلية</h2>
+            <div class="detailed-stats">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>أفضل العملات ربحية</h4>
+                        <div class="top-coins">
+                            <div class="coin-stat">
+                                <span class="coin">BTC</span>
+                                <span class="profit">+187%</span>
+                            </div>
+                            <div class="coin-stat">
+                                <span class="coin">ETH</span>
+                                <span class="profit">+156%</span>
+                            </div>
+                            <div class="coin-stat">
+                                <span class="coin">SOL</span>
+                                <span class="profit">+234%</span>
+                            </div>
+                            <div class="coin-stat">
+                                <span class="coin">ADA</span>
+                                <span class="profit">+145%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <h4>توزيع الأرباح</h4>
+                        <div class="profit-distribution">
+                            <div class="profit-range">
+                                <span class="range">0-50%</span>
+                                <span class="count">342 متداول</span>
+                            </div>
+                            <div class="profit-range">
+                                <span class="range">50-100%</span>
+                                <span class="count">567 متداول</span>
+                            </div>
+                            <div class="profit-range">
+                                <span class="range">100-200%</span>
+                                <span class="count">423 متداول</span>
+                            </div>
+                            <div class="profit-range">
+                                <span class="range">+200%</span>
+                                <span class="count">189 متداول</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+    <script src="community.js"></script>
+</body>
+</html>

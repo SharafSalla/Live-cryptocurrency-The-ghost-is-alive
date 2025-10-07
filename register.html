@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - SH-Ghost-Crypto-Analysis</title>
+    <meta name="description" content="أنشئ حسابك المجاني في SH-Ghost-Crypto-Analysis واحصل على ميزات إضافية وتوصيات مخصصة">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">📈 SH-Ghost-Crypto-Analysis</a>
+            </div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                <li><a href="support.html">الدعم والتفاعل</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary active">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>🚀 إنشاء حساب جديد</h1>
+                    <p>انضم إلى مجتمعنا المتنامي من المتداولين الناجحين</p>
+                </div>
+
+                <form id="register-form" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">الاسم الأول</label>
+                            <input type="text" id="first-name" name="firstName" required placeholder="الاسم الأول">
+                            <div class="input-icon">👤</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">الاسم الأخير</label>
+                            <input type="text" id="last-name" name="lastName" required placeholder="الاسم الأخير">
+                            <div class="input-icon">👤</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                        <div class="input-icon">📧</div>
+                        <div class="input-validation" id="email-validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <input type="password" id="password" name="password" required placeholder="أدخل كلمة مرور قوية">
+                        <div class="input-icon">🔒</div>
+                        <button type="button" class="password-toggle" onclick="togglePassword('password')">👁️</button>
+                        <div class="password-strength" id="password-strength"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">تأكيد كلمة المرور</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" required placeholder="أعد إدخال كلمة المرور">
+                        <div class="input-icon">🔒</div>
+                        <button type="button" class="password-toggle" onclick="togglePassword('confirm-password')">👁️</button>
+                        <div class="input-validation" id="password-match"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">البلد</label>
+                        <select id="country" name="country" required>
+                            <option value="">اختر بلدك</option>
+                            <option value="SA">السعودية</option>
+                            <option value="AE">الإمارات</option>
+                            <option value="EG">مصر</option>
+                            <option value="JO">الأردن</option>
+                            <option value="LB">لبنان</option>
+                            <option value="SY">سوريا</option>
+                            <option value="IQ">العراق</option>
+                            <option value="KW">الكويت</option>
+                            <option value="QA">قطر</option>
+                            <option value="BH">البحرين</option>
+                            <option value="OM">عمان</option>
+                            <option value="YE">اليمن</option>
+                            <option value="MA">المغرب</option>
+                            <option value="TN">تونس</option>
+                            <option value="DZ">الجزائر</option>
+                            <option value="LY">ليبيا</option>
+                            <option value="SD">السودان</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                        <div class="input-icon">🌍</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">مستوى الخبرة في التداول</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">اختر مستوى خبرتك</option>
+                            <option value="beginner">مبتدئ (أقل من 6 أشهر)</option>
+                            <option value="intermediate">متوسط (6 أشهر - سنتين)</option>
+                            <option value="advanced">متقدم (أكثر من سنتين)</option>
+                            <option value="expert">خبير (أكثر من 5 سنوات)</option>
+                        </select>
+                        <div class="input-icon">📊</div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            أوافق على <a href="privacy.html" target="_blank">شروط الاستخدام وسياسة الخصوصية</a>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            أرغب في تلقي النشرة الإخبارية والتحديثات
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        <span class="btn-text">إنشاء الحساب</span>
+                        <span class="btn-loading" style="display: none;">جاري الإنشاء...</span>
+                    </button>
+
+                    <div class="auth-divider">
+                        <span>أو</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="btn btn-secondary social-btn" onclick="registerWithGoogle()">
+                            <span class="social-icon">🔍</span>
+                            التسجيل بـ Google
+                        </button>
+                        <button type="button" class="btn btn-secondary social-btn" onclick="registerWithTwitter()">
+                            <span class="social-icon">🐦</span>
+                            التسجيل بـ Twitter
+                        </button>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- معلومات المميزات -->
+            <div class="auth-info">
+                <h3>🎁 ما ستحصل عليه مجاناً</h3>
+                <ul class="features-list">
+                    <li>
+                        <span class="feature-icon">📈</span>
+                        <div class="feature-content">
+                            <h4>توصيات يومية دقيقة</h4>
+                            <p>احصل على توصيات مبنية على التحليل الفني المتقدم</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">💰</span>
+                        <div class="feature-content">
+                            <h4>تتبع الأرباح والخسائر</h4>
+                            <p>راقب أداءك المالي وتطور استثماراتك</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">🔔</span>
+                        <div class="feature-content">
+                            <h4>تنبيهات فورية</h4>
+                            <p>احصل على إشعارات للفرص الاستثمارية المهمة</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">👥</span>
+                        <div class="feature-content">
+                            <h4>مجتمع المتداولين</h4>
+                            <p>تفاعل مع متداولين آخرين وشارك خبراتك</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">📚</span>
+                        <div class="feature-content">
+                            <h4>محتوى تعليمي</h4>
+                            <p>تعلم أساسيات التحليل الفني والتداول</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="feature-icon">🛡️</span>
+                        <div class="feature-content">
+                            <h4>أمان وخصوصية</h4>
+                            <p>بياناتك محمية بأعلى معايير الأمان</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="trust-indicators">
+                    <h4>🏆 مؤشرات الثقة</h4>
+                    <div class="trust-stats">
+                        <div class="trust-stat">
+                            <span class="trust-number">15,000+</span>
+                            <span class="trust-label">مستخدم نشط</span>
+                        </div>
+                        <div class="trust-stat">
+                            <span class="trust-number">87%</span>
+                            <span class="trust-label">نسبة دقة التوصيات</span>
+                        </div>
+                        <div class="trust-stat">
+                            <span class="trust-number">2,500+</span>
+                            <span class="trust-label">قصة نجاح</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SH-Ghost-Crypto-Analysis</h3>
+                <p>منصة تحليل العملات الرقمية الأكثر دقة في الوطن العربي. نقدم خدماتنا مجاناً لخدمة المجتمع.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="recommendations.html">التوصيات اليومية</a></li>
+                    <li><a href="community-success.html">نجاحات المجتمع</a></li>
+                    <li><a href="support.html">الدعم والتفاعل</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>الحساب</h3>
+                <ul>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                    <li><a href="register.html">إنشاء حساب</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>المساعدة</h3>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="support.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SH-Ghost-Crypto-Analysis. جميع الحقوق محفوظة. | مشروع مجاني لخدمة المجتمع</p>
+        </div>
+    </footer>
+
+    <!-- تحميل JavaScript -->
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
